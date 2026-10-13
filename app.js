@@ -18,7 +18,7 @@ async function connect() {
     try {
         document.getElementById("status").innerHTML = "狀態：搜尋裝置中...";
         bleDevice = await navigator.bluetooth.requestDevice({
-            filters: [{ name: "Interactive_Device" }],
+            filters: [{ name: "41204328" }],
             optionalServices: [SERVICE]
         });
 
